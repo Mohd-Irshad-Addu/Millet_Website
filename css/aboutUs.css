@@ -1,4 +1,4 @@
-/*code for navbar */
+/*basic code */
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +23,7 @@ p {
     font-size: 16px;
 }
 
+/*code for navbar starts from here */
 .navbar {
     background-color: #333;
     position: sticky;
