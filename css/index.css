@@ -6,8 +6,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: rgb(222, 144, 144);
+    color: black;
+    background-color: whitesmoke;
     border: 2px solid black;
     margin: 0;
     padding: 0;
@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-size: 16px;
-    color: #666;
 }
 
 .navbar {
@@ -77,11 +76,20 @@ p {
     display: none; /* Hide hamburger menu on larger screens */
     cursor: pointer;
 }
+#main-section {
+    padding: 20px 0;
+    transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
+}
+
+#school-overview {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
 
 @media (min-width: 768px) {
     /* Navbar Links for Desktop */
-    
-
     
 
     /* Main Content Layout for Larger Screens */
@@ -99,9 +107,19 @@ p {
     }
 }
 
-
+/*code for mobile device */
 @media (max-width: 767px) {
     /* Show navbar links when hamburger icon is clicked */
+   
+    .navbar .school-name {
+        font-size: 16px;
+    }
+    .navbar nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+        color: aqua;
+    }
+    
     .navbar nav {
         display: none; /* Initially hide navbar links */
         width: 100%;
@@ -109,7 +127,9 @@ p {
         top: 60px;
         left: 0;
         background-color: #333;
-        text-align: center;        
+        text-align: center;     
+        z-index: 9;   
+        
     }
     .navbar nav ul{
         flex-direction: column;
@@ -121,7 +141,13 @@ p {
         display: block;
     }
     .navbar nav.active{
-        display: block;
+        display: block;            
     }
+    #main-section.shifted {
+        margin-top: 250px; /* Adjust based on navbar height */
+        transition: margin-top 0.3s ease-in-out;
+    }
+
+    
 }
 
