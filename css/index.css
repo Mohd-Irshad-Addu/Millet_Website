@@ -102,7 +102,7 @@ p {
 
 @media (max-width: 767px) {
     /* Show navbar links when hamburger icon is clicked */
-    .navbar nav ul li a {
+    .navbar nav {
         display: none; /* Initially hide navbar links */
         width: 100%;
         position: absolute;
@@ -120,7 +120,7 @@ p {
     #hamburger{
         display: block;
     }
-    #nav-links.active{
+    .navbar nav.active{
         display: block;
     }
 }
