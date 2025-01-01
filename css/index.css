@@ -88,24 +88,7 @@ p {
     color: black;
 }
 
-@media (min-width: 768px) {
-    /* Navbar Links for Desktop */
-    
 
-    /* Main Content Layout for Larger Screens */
-    .main-content {
-        flex-direction: row; /* Horizontal layout for desktop */
-    }
-
-    .left-sidebar,
-    .right-sidebar {
-        width: 20%; /* Sidebar width on desktop */
-    }
-
-    .content {
-        width: 55%; /* Main content width on desktop */
-    }
-}
 
 /*code for mobile device */
 @media (max-width: 767px) {
