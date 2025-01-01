@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
     color: black;
     background-color: whitesmoke;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0;
     padding: 0;
     height: 100vh
@@ -50,6 +50,12 @@ p {
     font-weight: bold;
     color: white;
 }
+#school-name-container > h3 {
+    color: red;
+    padding: 0px 0px 0px 40px;
+    
+    
+}
 
 /* Navigation Links */
 .navbar nav ul {
@@ -76,17 +82,47 @@ p {
     display: none; /* Hide hamburger menu on larger screens */
     cursor: pointer;
 }
+/*navbar code ends here */
+
 #main-section {
     padding: 20px 0;
     transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
 }
 
-#school-overview {
-    background-color: #f4f4f4;
+/*school overivew code starts here */
+#school-overview, #success-stories {
     padding: 20px;
     border-radius: 5px;
     color: black;
 }
+/*school overivew code ends here */
+
+/*image slide  code starts here */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s ease-in-out;
+}
+
+.slider-image {
+    width: 100%;
+    object-fit: cover;
+    display: none; /* Initially hide all images */
+}
+
+.slider-image.active {
+    display: block; /* Only display the active image */
+}
+
+
+/*image slide  code starts here */
+
 
 
 
@@ -130,6 +166,12 @@ p {
         margin-top: 250px; /* Adjust based on navbar height */
         transition: margin-top 0.3s ease-in-out;
     }
+
+    /*image slide  code starts here */
+    .slider-image {
+        max-height: 300px;
+    }
+    /*image slide  code ends here */
 
     
 }
