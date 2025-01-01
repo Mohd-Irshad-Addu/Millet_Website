@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-* {
-=======
+/*code for navbar */
 *{
->>>>>>> be46f9d6db61535bb93933b20b8f12a1bbf2e6b7
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -97,8 +93,7 @@ p {
         background-color: #575757;
         border-radius: 5px;
         color: aqua;
-    }
-    
+    }    
     .navbar nav {
         display: none; /* Initially hide navbar links */
         width: 100%;
@@ -107,8 +102,7 @@ p {
         left: 0;
         background-color: #333;
         text-align: center;     
-        z-index: 9;   
-        
+        z-index: 9;           
     }
     .navbar nav ul{
         flex-direction: column;
@@ -129,16 +123,15 @@ p {
     
 }
 
-=======
+/*code for navbar ends here */
 
-
-body{
+/* body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background:#7d2ae8;
-}
+} */
 
 .wrapper{
     margin-left: 30px ;
@@ -224,4 +217,3 @@ body{
     font-size: 25px;
     line-height: 1.5;
 }
->>>>>>> be46f9d6db61535bb93933b20b8f12a1bbf2e6b7
