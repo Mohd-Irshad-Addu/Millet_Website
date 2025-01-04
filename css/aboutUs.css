@@ -3,21 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-body {
+/* body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: black;
-    background-color: whitesmoke;
-    border: 2px solid black;
-    margin: 0;
+    line-height: 1.6; */
+    /* color: black; */
+    /* background-color: whitesmoke; */
+    /* border: 2px solid black; */
+    /* margin: 0;
     padding: 0;
     height: 100vh
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
-}
+} */
 
 p {
     font-size: 16px;
@@ -126,17 +127,20 @@ p {
 
 /*code for navbar ends here */
 
-/* body{
-    display: flex;
+body{
+    /* display: flex; */
+    /* background-color: white; */
     justify-content: center;
     align-items: center;
+    
     min-height: 100vh;
     background:#7d2ae8;
-} */
+    
+}
 
 .wrapper{
     margin-left: 30px ;
-    width: 100%;
+    width: 95%;
 }
 
 .wrapper h1{
@@ -218,3 +222,4 @@ p {
     font-size: 25px;
     line-height: 1.5;
 }
+
