@@ -119,9 +119,94 @@ p {
 .slider-image.active {
     display: block; /* Only display the active image */
 }
+/*image slide  code ends here */
 
+/*footer code starts here */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-nav, .footer-about, .footer-ad {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box; /* To include padding in width */
+  }
+  
+  .footer-nav h3, .footer-about h3, .footer-ad h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-about p, .footer-ad p {
+    font-size: 14px;
+  }
+  
+  .footer-ad .ad-image {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Vertical Lines Between Sections */
+  .footer-nav {
+    border-right: 2px solid #fff; /* White vertical line after this section */
+  }
+  
+  .footer-about {
+    border-right: 2px solid #fff; /* White vertical line after this section */
+  }
+  
+  /* Mobile-Friendly Design */
+  @media (max-width: 768px) {
+    .footer-nav, .footer-about, .footer-ad {
+      width: 100%; /* Full width on small screens */
+      text-align: center; /* Center content */
+      border-right: none; /* Remove vertical lines on mobile */
+      padding: 20px 0; /* Add some padding for spacing */
+    }
+  
+    .footer-nav h3, .footer-about h3, .footer-ad h3 {
+      font-size: 16px; /* Slightly smaller font size on mobile */
+    }
+  
+    .footer-nav ul li {
+      margin-bottom: 8px; /* Increase space between list items */
+    }
+  
+    .footer-ad .ad-image {
+      max-width: 100%; /* Make the ad image responsive */
+    }
+  }
 
-/*image slide  code starts here */
+  /*footer code ends here */
 
 
 
