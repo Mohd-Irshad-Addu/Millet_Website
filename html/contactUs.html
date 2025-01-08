@@ -1,107 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title> Responsive Contact Us Form  </title>
     <link rel="stylesheet" href="/css/contactUs.css">
-</head>
-
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <div class="container">
-        
-        <header class="navbar">
-            <!-- school Logo and Name on the Left -->
-            <div class="logo">
-                <img src="/Images/index/school.png" alt="school Logo">
-                <span class="school-name">Millet-e-Islamia High School</span>
-            </div>
-    
-            <div id="hamburger"><img src="/Images/index/menu.png" alt="" width="40px" height="30px"></div>
-    
-            <!-- Navigation Links on the Right -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html">About</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="staff_section.html">Staff Section</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </nav>
-        </header>
-
-       
-    
-
-    <div class="sub-container">
-        <h1>Connet With Us</h1>
-        <p>we would love to respond to your queries and help you succeed.<br> Feel free to get in touch with us.</p>
-
-        <div class="contact-box">
-            <div class="contact-left">
-                <h3>Sent your request</h3>
-                <form >
-
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Shaik Abdul Mateen">
-                        </div>
-
-                        <div class="input-group">
-                            <label>Phone</label>
-                            <input type="text" placeholder="+91 8790438131">
-                        </div>
-                    </div>
-
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="shaikabdulmateenmateen@gmail.com">
-                        </div>
-
-                        <div class="input-group">
-                            <label>Subject</label>
-                            <input type="text" placeholder="for Addmission">
-                        </div>
-                    </div>
-
-
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="Your Message"></textarea>
-
-                    <button type="submit">SEND</button>
-                </form>
-            </div>
-
-            <div class="contact-right">
-                <h3>Reach Us</h3>
-                
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td>millateislamiahighschool1@gmail.com</td>
-                    </tr>
-
-                    <tr>
-                        <td>Phone</td>
-                        <td> +91 8790438131</td>
-                    </tr>
-
-                    <tr>
-                        <td>Address</td>
-                        <td>mohalla banda near ek minaar masjid utkoor  </td>
-                    </tr>
-                </table>
-
-            </div>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">banda street</div>
+          <div class="text-two">utkoor , narayanpet </div>
         </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">Millateislamiahighschool1@gmail.com</div>
+          <div class="text-two">Millateislamiahighschool1@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis necessitatibus consequuntur minima veniam, velit culpa quo assumenda fugit deleniti?</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
     </div>
     </div>
-    <script src="/javscript/contactUs.js"></script>
+  </div>
 </body>
-
 </html>
