@@ -52,8 +52,7 @@ p {
 }
 #school-name-container > h3 {
     color: red;
-    padding: 0px 0px 0px 40px;
-    
+    padding: 0px 0px 0px 40px;  
     
 }
 
@@ -85,12 +84,12 @@ p {
 /*navbar code ends here */
 
 #main-section {
-    padding: 20px 0;
+    padding: 0px 0;
     transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
 }
 
 /*school overivew code starts here */
-#school-overview, #success-stories {
+#school-overview, #success-stories, #our-vision {
     padding: 20px;
     border-radius: 5px;
     color: black;
@@ -162,6 +161,7 @@ footer {
   
   .footer-nav ul li a:hover {
     text-decoration: underline;
+   
   }
   
   .footer-about p, .footer-ad p {
@@ -183,31 +183,18 @@ footer {
   .footer-about {
     border-right: 2px solid #fff; /* White vertical line after this section */
   }
-  
-  /* Mobile-Friendly Design */
-  @media (max-width: 768px) {
-    .footer-nav, .footer-about, .footer-ad {
-      width: 100%; /* Full width on small screens */
-      text-align: center; /* Center content */
-      border-right: none; /* Remove vertical lines on mobile */
-      padding: 20px 0; /* Add some padding for spacing */
-    }
-  
-    .footer-nav h3, .footer-about h3, .footer-ad h3 {
-      font-size: 16px; /* Slightly smaller font size on mobile */
-    }
-  
-    .footer-nav ul li {
-      margin-bottom: 8px; /* Increase space between list items */
-    }
-  
-    .footer-ad .ad-image {
-      max-width: 100%; /* Make the ad image responsive */
-    }
+  .footer-about ul {
+    list-style: none;
+    padding-bottom: 20px;
   }
-
-  /*footer code ends here */
-
+  .footer-about ul li a{
+    color: rgb(85, 85, 247);
+  }
+  .footer-about ul li a:hover{
+    font-size: large;
+  }
+  
+  
 
 
 
@@ -258,6 +245,35 @@ footer {
     }
     /*image slide  code ends here */
 
+    /* mobile code for footer starts here */
+    .footer-nav, .footer-about, .footer-ad {
+      width: 100%; /* Full width on small screens */
+      text-align: center; /* Center content */
+      border-right: none; /* Remove vertical lines on mobile */
+      padding: 20px 0; /* Add some padding for spacing */
+    }
+  
+    .footer-nav h3, .footer-about h3, .footer-ad h3 {
+      font-size: 16px; /* Slightly smaller font size on mobile */
+    }
+  
+    .footer-nav ul li {
+      margin-bottom: 8px; /* Increase space between list items */
+      list-style: none;      
+    }
+    .footer-about ul {
+      padding-bottom: 10px;
+      list-style: none;     
+      
+    }
     
-}
+    .footer-ad .ad-image {
+      max-width: 100%; /* Make the ad image responsive */
+    }
+    /* mobile code for footer ends here */
+
+
+
+  }
+
 
