@@ -94,6 +94,8 @@ p {
     border-radius: 5px;
     color: black;
 }
+
+
 /*school overivew code ends here */
 
 /*image slide  code starts here */
@@ -108,6 +110,12 @@ p {
     flex-direction: column;
     transition: transform 1s ease-in-out;
 }
+.slider-container > img {
+  height: 100%;
+  width: 100%;
+  padding: 30px 100px 10px 100px;
+  /* border-radius: 55px; */
+}
 
 .slider-image {
     width: 100%;
@@ -121,6 +129,11 @@ p {
 /*image slide  code ends here */
 
 /*footer code starts here */
+
+#azad-pic{
+  padding-left: 200px;
+
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -243,9 +256,23 @@ footer {
     .slider-image {
         max-height: 300px;
     }
+
+    .slider-container > img {
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      border-radius: 15px;
+    }
     /*image slide  code ends here */
 
     /* mobile code for footer starts here */
+    #azad-pic{
+     padding: 0px 10px 10px 10px; 
+    }
+    #azad-pic >img{
+      height: 100%;
+      width: 100%;
+     }
     .footer-nav, .footer-about, .footer-ad {
       width: 100%; /* Full width on small screens */
       text-align: center; /* Center content */
