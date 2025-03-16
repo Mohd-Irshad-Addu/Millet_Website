@@ -172,6 +172,7 @@
     border-radius: 50%;
     border: 6px solid#fff;
     object-fit: contain;
+    border: 2px solid #f3f3f3;
 }
 
 .team-section .container .team-card .card .content{
