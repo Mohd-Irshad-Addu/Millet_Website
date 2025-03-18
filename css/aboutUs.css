@@ -179,9 +179,15 @@ p {
     transition: 0.3s ease;
 }
 
+.content button a {
+    text-decoration: none;
+    color: white;
+}
+
 .content button:hover{
     background-color: #ff6347;
     transform: scale(1.1);
+    text-decoration: underline;
 }
 .image{
     flex: 1;
