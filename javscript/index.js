@@ -5,6 +5,13 @@ const mainSection = document.getElementById("main-section");
 //toggle button setting
 hamburger.addEventListener("click", function () {
   navLinks.classList.toggle("active");
+  if (mainSection) {
+  if (navLinks.classList.contains("active")) {
+    mainSection.classList.add("shifted");
+  } else {
+    mainSection.classList.remove("shifted");
+  }
+}
   // navLinks.style.backgroundColor = "red"
   if (navLinks.classList.contains("active")) {
     mainSection.classList.add('shifted'); // Adjust this value based on navbar height

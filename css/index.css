@@ -51,9 +51,21 @@ p {
     color: white;
 }
 #school-name-container > h3 {
-    color: red;
+    /* color: red; */
     padding: 0px 0px 0px 40px;  
     
+}
+.saffron {
+  color: #FF9933 !important;
+}
+
+.white {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 2px black;
+}
+
+.green {
+  color: #138808 !important;
 }
 
 /* Navigation Links */
@@ -73,10 +85,40 @@ p {
     padding: 10px 20px;
 }
 
-.navbar nav ul li a:hover {
+/* .navbar nav ul li a:hover {
     background-color: #575757;
     border-radius: 5px;
+} */
+
+.navbar nav ul li a {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
+.navbar nav ul li a:hover {
+  background-color: #575757;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(5px); /* Adds a slight horizontal movement */
+}
+
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1); /* Underline effect */
+}
+
 #hamburger {
     display: none; /* Hide hamburger menu on larger screens */
     cursor: pointer;
@@ -85,6 +127,7 @@ p {
 
 #main-section {
     padding: 0px 0;
+    
     transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
 }
 
@@ -111,10 +154,12 @@ p {
     transition: transform 1s ease-in-out;
 }
 .slider-container > img {
+
   height: 100%;
   width: 100%;
-  padding: 30px 100px 10px 100px;
-  /* border-radius: 55px; */
+  padding: 30px 100px; /* More padding for large screens */
+  border-radius: 15px;
+  object-fit: cover;
 }
 
 .slider-image {
@@ -131,7 +176,11 @@ p {
 /*footer code starts here */
 
 #azad-pic{
-  padding-left: 200px;
+  height: 100%;
+  width: 100%;
+  padding: 30px 100px; /* More padding for large screens */
+  border-radius: 15px;
+  object-fit: cover;
 
 }
 
@@ -258,7 +307,14 @@ footer {
         display: block;            
     }
     #school-name-container{
-      margin-left: 70px;
+       position: absolute; /* Use absolute positioning to position it precisely */
+      left: 50%; /* Move the element to the center horizontally */
+      transform: translateX(-50%); /* Adjust the element’s position to center it */
+      text-align: center; /* Center the text inside the container */
+      z-index: 2; /* Ensure it stays on top of other navbar items if needed */
+    }
+    .school-scroll{
+      margin-right: 20px;
     }
 
     .footer-nav ul li a:hover {
@@ -319,7 +375,10 @@ footer {
     }
     
     .footer-ad .ad-image {
-      max-width: 100%; /* Make the ad image responsive */
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
     /* mobile code for footer ends here */
 
