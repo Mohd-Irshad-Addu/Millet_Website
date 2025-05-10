@@ -134,6 +134,10 @@ p {
   padding-left: 200px;
 
 }
+
+#our-vision>ul{
+  padding-left: 20px;
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -206,6 +210,12 @@ footer {
   .footer-about ul li a:hover{
     font-size: large;
   }
+
+  .footer-nav ul li a:hover {
+    background-color: #575757;
+    /* border-radius: 5px; */
+    /* color: aqua; */
+}
   
   
 
@@ -247,6 +257,16 @@ footer {
     .navbar nav.active{
         display: block;            
     }
+    #school-name-container{
+      margin-left: 70px;
+    }
+
+    .footer-nav ul li a:hover {
+      background-color: #575757;
+      /* border-radius: 5px; */
+      /* color: aqua; */
+  }
+
     #main-section.shifted {
         margin-top: 250px; /* Adjust based on navbar height */
         transition: margin-top 0.3s ease-in-out;
@@ -287,6 +307,10 @@ footer {
     .footer-nav ul li {
       margin-bottom: 8px; /* Increase space between list items */
       list-style: none;      
+    }
+
+    .footer-nav ul li a:hover {
+      text-decoration: underline;     
     }
     .footer-about ul {
       padding-bottom: 10px;
