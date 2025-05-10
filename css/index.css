@@ -140,6 +140,14 @@ p {
     border-radius: 5px;
     color: black;
 }
+
+h2,.urdu-text,.english-text  {
+  margin-left: 10%;
+  margin-right: 10%;
+  /* Optional: for better readability */
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
 .urdu-text {
   font-family: 'Noto Nastaliq Urdu', serif;
   direction: rtl;
@@ -147,6 +155,13 @@ p {
   line-height: 1.8;  /* Line height ko increase kar diya hai */
   letter-spacing: 0.5px; /* Thoda letter spacing add kiya hai */
   font-size: 18px;
+}
+.english-text{
+  font-family: 'Roboto', sans-serif;  /* Or 'Open Sans' */
+    font-size: 18px;                   /* Larger text for better readability */
+    line-height: 1.8;                  /* Extra space between lines for better clarity */
+    margin-bottom: 16px;               /* Space between paragraphs */
+    color: #444;      
 }
 
 
@@ -163,6 +178,7 @@ p {
     display: flex;
     flex-direction: column;
     transition: transform 1s ease-in-out;
+    
 }
 .slider-container > img {
 
@@ -289,7 +305,7 @@ footer {
         font-size: 16px;
     }
     .navbar nav ul li a:hover {
-        background-color: #575757;
+        /* background-color: #575757; */
         border-radius: 5px;
         color: aqua;
     }
@@ -398,3 +414,4 @@ footer {
   }
 
 
+  
