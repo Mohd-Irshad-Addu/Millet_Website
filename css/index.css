@@ -351,6 +351,7 @@ footer {
       transform: translateX(-50%); /* Adjust the element’s position to center it */
       text-align: center; /* Center the text inside the container */
       z-index: 2; /* Ensure it stays on top of other navbar items if needed */
+      width: 90%;
     }
     .school-scroll{
       margin-right: 20px;
