@@ -50,11 +50,12 @@ p {
     font-weight: bold;
     color: white;
 }
+
 #school-name-container > h3 {
     /* color: red; */
-    padding: 0px 0px 0px 40px;  
-    
+    padding: 0px 0px 0px 40px;     
 }
+
 .saffron {
   color: #FF9933 !important;
 }
