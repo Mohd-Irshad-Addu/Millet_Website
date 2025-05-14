@@ -2,23 +2,29 @@
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.querySelector("nav");
 const mainSection = document.getElementById("main-section");
-//toggle button setting
-hamburger.addEventListener("click", function () {
+
+
+//navbar and toggle code starts here
+// Function to toggle the menu and shift the main section
+function toggleMenu() {
+  // Toggle the visibility of the nav links
   navLinks.classList.toggle("active");
+
+  // Check if 'mainSection' exists and toggle 'shifted' class based on 'active' class
   if (mainSection) {
-  if (navLinks.classList.contains("active")) {
-    mainSection.classList.add("shifted");
-  } else {
-    mainSection.classList.remove("shifted");
+    if (navLinks.classList.contains("active")) {
+      mainSection.classList.add("shifted"); // Shift the main section when menu is active
+    } else {
+      mainSection.classList.remove("shifted"); // Reset the shift when menu is closed
+    }
   }
 }
-  // navLinks.style.backgroundColor = "red"
-  if (navLinks.classList.contains("active")) {
-    mainSection.classList.add('shifted'); // Adjust this value based on navbar height
-  } else {
-    mainSection.classList.remove('shifted') // Reset the margin when navbar is hidden
-  }
-});
+
+
+// Event listeners for click and touch events to ensure compatibility with all devices
+hamburger.addEventListener("click", toggleMenu); // Handle click event on desktops
+//hamburger.addEventListener("touchstart", toggleMenu); // Handle touch event on mobile devices
+
 //navbar and toggle code ends here
 
 //image slider code starts here
@@ -44,5 +50,8 @@ setInterval(moveSlider, 3000);
 //image slider code ends here
 
 
+
+
+//for test purpose
 
 

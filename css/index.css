@@ -329,7 +329,7 @@ footer {
         background-color: #333;
         text-align: center;     
         z-index: 9;   
-        
+                
     }
     .navbar nav ul{
         flex-direction: column;
@@ -341,7 +341,8 @@ footer {
         display: block;
     }
     .navbar nav.active{
-        display: block;            
+        display: block; 
+                 
     }
     #main-section > #school-overview > h2{
       margin-top: 20px;
