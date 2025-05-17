@@ -118,7 +118,7 @@ p {
   .navbar nav.active{
       display: block;            
   }
-  #main-content{
+  #main-section{
       margin: 20px 0px 0px 20px;
   }
   #main-section.shifted {
@@ -128,7 +128,7 @@ p {
   
 }
 
-#main-content{   
+#main-section{   
   
   /* height: 100vh; */
  margin: 20px 0px 0px 140px;
