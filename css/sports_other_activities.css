@@ -57,6 +57,24 @@ p {
     color: white;
 }
 
+#school-name-container > h3 {
+    /* color: red; */
+    padding: 0px 0px 0px 40px;     
+}
+
+.saffron {
+  color: #FF9933 !important;
+}
+
+.white {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 2px black;
+}
+
+.green {
+  color: #138808 !important;
+}
+
 /* Navigation Links */
 .navbar nav ul {
     display: flex;
@@ -74,10 +92,40 @@ p {
     padding: 10px 20px;
 }
 
-.navbar nav ul li a:hover {
+/* .navbar nav ul li a:hover {
     background-color: #575757;
     border-radius: 5px;
+} */
+
+.navbar nav ul li a {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
+.navbar nav ul li a:hover {
+  background-color: #575757;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(5px); /* Adds a slight horizontal movement */
+}
+
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1); /* Underline effect */
+}
+
 #hamburger {
     display: none; /* Hide hamburger menu on larger screens */
     cursor: pointer;
