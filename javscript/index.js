@@ -23,7 +23,7 @@ function toggleMenu() {
 
 // Event listeners for click and touch events to ensure compatibility with all devices
 hamburger.addEventListener("click", toggleMenu); // Handle click event on desktops
-//hamburger.addEventListener("touchstart", toggleMenu); // Handle touch event on mobile devices
+hamburger.addEventListener("touchstart", toggleMenu); // Handle touch event on mobile devices
 
 //navbar and toggle code ends here
 
