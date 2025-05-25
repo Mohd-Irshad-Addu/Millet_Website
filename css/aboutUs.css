@@ -133,6 +133,8 @@ p {
     transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
 }
 
+
+
 /*code for mobile device */
 @media (max-width: 767px) {
     /* Show navbar links when hamburger icon is clicked */

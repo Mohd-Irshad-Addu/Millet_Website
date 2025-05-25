@@ -159,6 +159,14 @@ p {
 #main-section>#school-overview>h2 {
   text-align: right;
 }
+#marquee-section{
+  padding: 0px 0px 20px 0px;
+}
+#marquee-section > marquee{
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+}
 
 /*school overivew code starts here */
 #school-overview,
@@ -538,4 +546,3 @@ footer {
 
 
 
-}
