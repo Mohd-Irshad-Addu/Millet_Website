@@ -165,7 +165,19 @@ p {
 #marquee-section > marquee{
   overflow: hidden;
   position: relative;
-  font-size: 20px;
+  /* font-size: 30px; */
+}
+
+#marquee-section marquee:first-child {
+    color: orange;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#marquee-section marquee:last-child {
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /*school overivew code starts here */
