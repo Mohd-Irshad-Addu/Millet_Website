@@ -165,13 +165,14 @@ p {
 #marquee-section > marquee{
   overflow: hidden;
   position: relative;
+  
   /* font-size: 30px; */
 }
 
 #marquee-section marquee:first-child {
     color: orange;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 #marquee-section marquee:last-child {
@@ -438,6 +439,8 @@ footer {
     margin-top: 20px;
   }
 
+  
+
   #school-name-container {
     position: absolute;
     /* Use absolute positioning to position it precisely */
@@ -466,6 +469,7 @@ footer {
     margin-top: 250px;
     /* Adjust based on navbar height */
     transition: margin-top 0.3s ease-in-out;
+    
   }
 
   /*image slide  code starts here */

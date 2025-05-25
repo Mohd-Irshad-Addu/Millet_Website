@@ -2,6 +2,7 @@
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.querySelector("nav");
 const mainSection = document.getElementById("main-section");
+const marquee = document.getElementById("marquee-section")
 
 
 //navbar and toggle code starts here
@@ -14,6 +15,7 @@ function toggleMenu() {
   if (mainSection) {
     if (navLinks.classList.contains("active")) {
       mainSection.classList.add("shifted"); // Shift the main section when menu is active
+      marquee.style.paddingTop = '15px';
     } else {
       mainSection.classList.remove("shifted"); // Reset the shift when menu is closed
     }
