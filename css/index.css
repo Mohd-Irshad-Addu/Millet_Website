@@ -1,59 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: black;
-    background-color: whitesmoke;
-    /* border: 2px solid black; */
-    margin: 0;
-    padding: 0;
-    height: 100vh
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: whitesmoke;
+  /* border: 2px solid black; */
+  margin: 0;
+  padding: 0;
+  height: 100vh
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .navbar {
-    background-color: #333;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between; /* Align items to both ends */
-    align-items: center; /* Vertically center the items */
-    padding: 10px 20px;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  /* Align items to both ends */
+  align-items: center;
+  /* Vertically center the items */
+  padding: 10px 20px;
 }
 
 .navbar .logo {
-    display: flex;
-    align-items: center; /* Vertically align logo and company name */
+  display: flex;
+  align-items: center;
+  /* Vertically align logo and company name */
 }
 
 .navbar .logo img {
-    width: 40px; /* Adjust logo size */
-    height: auto;
-    margin-right: 10px; /* Space between logo and company name */
+  width: 40px;
+  /* Adjust logo size */
+  height: auto;
+  margin-right: 10px;
+  /* Space between logo and company name */
 }
 
 .navbar .school-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
-#school-name-container > h3 {
-    /* color: red; */
-    padding: 0px 0px 0px 40px;     
+#school-name-container>h3 {
+  /* color: red; */
+  padding: 0px 0px 0px 40px;
 }
 
 .saffron {
@@ -71,19 +83,19 @@ p {
 
 /* Navigation Links */
 .navbar nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .navbar nav ul li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .navbar nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
 }
 
 /* .navbar nav ul li a:hover {
@@ -94,14 +106,16 @@ p {
 .navbar nav ul li a {
   position: relative;
   padding: 10px 20px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Smooth transition */
 }
 
 .navbar nav ul li a:hover {
   background-color: #575757;
   color: aqua;
   border-radius: 5px;
-  transform: translateX(5px); /* Adds a slight horizontal movement */
+  transform: translateX(5px);
+  /* Adds a slight horizontal movement */
 }
 
 .navbar nav ul li a::after {
@@ -117,13 +131,14 @@ p {
 }
 
 .navbar nav ul li a:hover::after {
-  transform: scaleX(1); /* Underline effect */
+  transform: scaleX(1);
+  /* Underline effect */
 }
 
 #hamburger {
-    display: none;
-    
-    /*
+  display: none;
+
+  /*
     position: absolute;
     top: 10px;
     right: 20px;
@@ -131,45 +146,60 @@ p {
     cursor: pointer;
      */
 }
+
 /*navbar code ends here */
 
 #main-section {
-    padding: 0px 0;
-    
-    transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
+  padding: 0px 0;
+
+  transition: margin-top 0.3s ease-in-out;
+  /* Smooth transition for shifting content*/
 }
-  #main-section > #school-overview > h2{
-    text-align: right;
-  }
+
+#main-section>#school-overview>h2 {
+  text-align: right;
+}
 
 /*school overivew code starts here */
-#school-overview, #success-stories, #our-vision {
-    padding: 20px;
-    border-radius: 5px;
-    color: black;
+#school-overview,
+#success-stories,
+#our-vision {
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
 }
 
-h2,.urdu-text,.english-text  {
+h2,
+.urdu-text,
+.english-text {
   margin-left: 10%;
   margin-right: 10%;
   /* Optional: for better readability */
   line-height: 1.6;
   font-family: Arial, sans-serif;
 }
+
 .urdu-text {
   font-family: 'Noto Nastaliq Urdu', serif;
   direction: rtl;
   text-align: right;
-  line-height: 1.8;  /* Line height ko increase kar diya hai */
-  letter-spacing: 0.5px; /* Thoda letter spacing add kiya hai */
+  line-height: 1.8;
+  /* Line height ko increase kar diya hai */
+  letter-spacing: 0.5px;
+  /* Thoda letter spacing add kiya hai */
   font-size: 18px;
 }
-.english-text{
-  font-family: 'Roboto', sans-serif;  /* Or 'Open Sans' */
-    font-size: 18px;                   /* Larger text for better readability */
-    line-height: 1.8;                  /* Extra space between lines for better clarity */
-    margin-bottom: 16px;               /* Space between paragraphs */
-    color: #444;      
+
+.english-text {
+  font-family: 'Roboto', sans-serif;
+  /* Or 'Open Sans' */
+  font-size: 18px;
+  /* Larger text for better readability */
+  line-height: 1.8;
+  /* Extra space between lines for better clarity */
+  margin-bottom: 16px;
+  /* Space between paragraphs */
+  color: #444;
 }
 
 
@@ -177,268 +207,335 @@ h2,.urdu-text,.english-text  {
 
 /*image slide  code starts here */
 .image-slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .slider-container {
-    display: flex;
-    flex-direction: column;
-    transition: transform 1s ease-in-out;
-    
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s ease-in-out;
+
 }
-.slider-container > img {
+
+.slider-container>img {
 
   height: 100%;
   width: 100%;
-  padding: 30px 100px; /* More padding for large screens */
+  padding: 30px 100px;
+  /* More padding for large screens */
   border-radius: 15px;
   object-fit: cover;
 }
 
 .slider-image {
-    width: 100%;
-    object-fit: cover;
-    display: none; /* Initially hide all images */
+  width: 100%;
+  object-fit: cover;
+  display: none;
+  /* Initially hide all images */
 }
 
 .slider-image.active {
-    display: block; /* Only display the active image */
+  display: block;
+  /* Only display the active image */
 }
+
 /*image slide  code ends here */
 
 /*footer code starts here */
 
-#azad-pic{
+#azad-pic {
   height: 100%;
   width: 100%;
-  padding: 30px 100px; /* More padding for large screens */
+  padding: 30px 100px;
+  /* More padding for large screens */
   border-radius: 15px;
   object-fit: cover;
 
 }
 
-#our-vision>ul{
+#our-vision>ul {
   padding-left: 20px;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .footer-nav, .footer-about, .footer-ad {
-    width: 30%;
-    padding: 10px;
-    box-sizing: border-box; /* To include padding in width */
 
-  }
-  .footer-nav{
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-nav,
+.footer-about,
+.footer-ad {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* To include padding in width */
+
+}
+
+.footer-nav {
   margin-left: 5%;
   /* margin-right: 10%; */
+}
+
+.footer-nav h3,
+.footer-about h3,
+.footer-ad h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 5px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+  background-color: #575757;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(5px);
+  /* Adds a slight horizontal movement */
+  padding: 10px;
+
+}
+
+.footer-about p,
+.footer-ad p {
+  font-size: 14px;
+}
+
+.footer-ad .ad-image {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Vertical Lines Between Sections */
+.footer-nav {
+  border-right: 2px solid #fff;
+  /* White vertical line after this section */
+}
+
+.footer-about {
+  border-right: 2px solid #fff;
+  /* White vertical line after this section */
+}
+
+.footer-about ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.footer-about ul li a {
+  color: rgb(85, 85, 247);
+}
+
+.footer-about ul li a:hover {
+  font-size: large;
+}
+
+.footer-nav ul li a:hover {
+  background-color: #575757;
+  /* border-radius: 5px; */
+  /* color: aqua; */
+}
+
+
+
+
+
+/*code for mobile device */
+@media (max-width: 767px) {
+  /* Show navbar links when hamburger icon is clicked */
+
+  .navbar .school-name {
+    font-size: 16px;
   }
-  .footer-nav h3, .footer-about h3, .footer-ad h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-nav ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-nav ul li a:hover {
-    text-decoration: underline;
-    background-color: #575757;
-    color: aqua;
+
+  .navbar nav ul li a:hover {
+    /* background-color: #575757; */
     border-radius: 5px;
-    transform: translateX(5px); /* Adds a slight horizontal movement */
-    padding: 10px;
-   
+    color: aqua;
   }
-  
-  .footer-about p, .footer-ad p {
-    font-size: 14px;
-  }
-  
-  .footer-ad .ad-image {
+
+  .navbar nav {
+    display: none;
+    /* Initially hide navbar links */
     width: 100%;
-    max-width: 300px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    text-align: center;
+    z-index: 9;
+
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+  }
+
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
+
+  #hamburger {
     display: block;
-    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+
   }
-  
-  /* Vertical Lines Between Sections */
-  .footer-nav {
-    border-right: 2px solid #fff; /* White vertical line after this section */
+
+  .navbar nav.active {
+    display: block;
   }
-  
-  .footer-about {
-    border-right: 2px solid #fff; /* White vertical line after this section */
+
+  #main-section>#school-overview>h2 {
+    margin-top: 20px;
   }
-  .footer-about ul {
-    list-style: none;
-    padding-bottom: 20px;
+
+  #school-name-container {
+    position: absolute;
+    /* Use absolute positioning to position it precisely */
+    left: 50%;
+    /* Move the element to the center horizontally */
+    transform: translateX(-50%);
+    /* Adjust the element’s position to center it */
+    text-align: center;
+    /* Center the text inside the container */
+    z-index: 2;
+    /* Ensure it stays on top of other navbar items if needed */
+    width: 90%;
   }
-  .footer-about ul li a{
-    color: rgb(85, 85, 247);
-  }
-  .footer-about ul li a:hover{
-    font-size: large;
+
+  .school-scroll {
+    margin-right: 20px;
   }
 
   .footer-nav ul li a:hover {
     background-color: #575757;
     /* border-radius: 5px; */
     /* color: aqua; */
+  }
+
+  #main-section.shifted {
+    margin-top: 250px;
+    /* Adjust based on navbar height */
+    transition: margin-top 0.3s ease-in-out;
+  }
+
+  /*image slide  code starts here */
+  .slider-image {
+    max-height: 300px;
+  }
+
+  .slider-container>img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  /*image slide  code ends here */
+
+  /* mobile code for footer starts here */
+  #azad-pic {
+    padding: 0px 10px 10px 10px;
+  }
+
+  #azad-pic>img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer-nav,
+  .footer-about,
+  .footer-ad {
+    width: 100%;
+    /* Full width on small screens */
+    text-align: center;
+    /* Center content */
+    border-right: none;
+    /* Remove vertical lines on mobile */
+    padding: 20px 0;
+    /* Add some padding for spacing */
+  }
+
+  .footer-nav h3,
+  .footer-about h3,
+  .footer-ad h3 {
+    font-size: 16px;
+    /* Slightly smaller font size on mobile */
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 8px;
+    /* Increase space between list items */
+    list-style: none;
+  }
+
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-about ul {
+    padding-bottom: 10px;
+    list-style: none;
+
+  }
+
+  .footer-ad .ad-image {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+   .footer-container > div {
+    position: relative;
+    padding-bottom: 20px; /* Space between content and the line */
+    margin-bottom: 20px;  /* Space below the line */
+  }
+
+  .footer-container > div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #ff0066, #ffcc00); /* colorful line */
+    border-radius: 2px;
+  }
 }
-  
-  
-
-
-
-/*code for mobile device */
-@media (max-width: 767px) {
-    /* Show navbar links when hamburger icon is clicked */
-   
-    .navbar .school-name {
-        font-size: 16px;
-    }
-    .navbar nav ul li a:hover {
-        /* background-color: #575757; */
-        border-radius: 5px;
-        color: aqua;
-    }
-    
-    .navbar nav {
-        display: none; /* Initially hide navbar links */
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        text-align: center;     
-        z-index: 9;   
-                
-    }
-    .navbar nav ul{
-        flex-direction: column;
-    }
-    .navbar nav ul li{
-        margin: 10px 0;
-    }
-    #hamburger{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        z-index: 999;
-        cursor: pointer;
-        
-    }
-    .navbar nav.active{
-        display: block;                  
-    }
-    #main-section > #school-overview > h2{
-      margin-top: 20px;
-    }
-    #school-name-container{
-       position: absolute; /* Use absolute positioning to position it precisely */
-      left: 50%; /* Move the element to the center horizontally */
-      transform: translateX(-50%); /* Adjust the element’s position to center it */
-      text-align: center; /* Center the text inside the container */
-      z-index: 2; /* Ensure it stays on top of other navbar items if needed */
-      width: 90%;
-    }
-    .school-scroll{
-      margin-right: 20px;
-    }
-
-    .footer-nav ul li a:hover {
-      background-color: #575757;
-      /* border-radius: 5px; */
-      /* color: aqua; */
-  }
-
-    #main-section.shifted {
-        margin-top: 250px; /* Adjust based on navbar height */
-        transition: margin-top 0.3s ease-in-out;
-    }
-
-    /*image slide  code starts here */
-    .slider-image {
-        max-height: 300px;
-    }
-
-    .slider-container > img {
-      height: 100%;
-      width: 100%;
-      padding: 10px;
-      border-radius: 15px;
-    }
-    /*image slide  code ends here */
-
-    /* mobile code for footer starts here */
-    #azad-pic{
-     padding: 0px 10px 10px 10px; 
-    }
-    #azad-pic >img{
-      height: 100%;
-      width: 100%;
-     }
-    .footer-nav, .footer-about, .footer-ad {
-      width: 100%; /* Full width on small screens */
-      text-align: center; /* Center content */
-      border-right: none; /* Remove vertical lines on mobile */
-      padding: 20px 0; /* Add some padding for spacing */
-    }
-  
-    .footer-nav h3, .footer-about h3, .footer-ad h3 {
-      font-size: 16px; /* Slightly smaller font size on mobile */
-    }
-  
-    .footer-nav ul li {
-      margin-bottom: 8px; /* Increase space between list items */
-      list-style: none;      
-    }
-
-    .footer-nav ul li a:hover {
-      text-decoration: underline;     
-    }
-    .footer-about ul {
-      padding-bottom: 10px;
-      list-style: none;     
-      
-    }
-    
-    .footer-ad .ad-image {
-      max-width: 90%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    /* mobile code for footer ends here */
-
-
-
-  }
-
 
   
+
+  /* mobile code for footer ends here */
+
+
+
+}
