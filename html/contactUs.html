@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Responsive Contact Us Form </title>
+    <link rel="stylesheet" href="../css/contactUs.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+       <!-- Sticky Navbar -->
+    <header class="navbar">
+        <!-- school Logo and Name on the Left -->
+        <div class="logo">
+          <img src="../Images/index/school.png" alt="school Logo">
+            <div id="school-name-container">
+                <span class="school-name">Millet-e-Islamia High School</span>
+                <h3 class="school-scroll">
+                    <span class="saffron">مِلَّتِ</span>
+                    <span class="white">اسلامیہ</span>
+                    <span class="green">ہائی اسکول</span>
+                </h3>
+            </div>
+        </div>
+
+        <div id="hamburger"><img src="../Images/index/menu.png" alt="" width="40px" height="30px"></div>
+
+
+        <!-- Navigation Links on the Right -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="Addmission.html">Admission</a></li>
+                <li><a href="staff_section.html">Staff Section</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-section">
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Banda Street ,Utkoor Village</div>
+                        <div class="text-two">Dist Narayanpet, Telangana </div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+91 73863 02446</div>
+                        <div class="text-two">+91 86869 11046</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">Millateislamiahighschool1@gmail.com</div>
+                        <!-- <div class="text-two">Millateislamiahighschool1@gmail.com</div> -->
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p>"We are here to assist you with any inquiries you may have. Whether you're a parent, student, or
+                        visitor, feel free to contact us for any information or support. Our team is dedicated to
+                        providing you with the help you need. Please use the contact form below or email us directly,
+                        and we'll respond as soon as possible."
+
+
+                    </p>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="a7be1658-3d08-4167-9284-4acc51c4960b">
+                        <div class="input-box">
+                            <input type="text" name="first_name" placeholder="Enter your name" autocomplete="off" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" placeholder="Enter your email" autocomplete="off" required>
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea type="text" name="message" placeholder="Feedback" autocomplete="off" required></textarea>
+                        </div>
+                        <button type="submit">Send Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javscript/contactUs.js"></script>
+</body>
+
+</html>

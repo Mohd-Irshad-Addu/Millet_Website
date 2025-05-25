@@ -1,0 +1,237 @@
+/*basic code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transform: .2s cubic-bezier(.34,1.12,.68,1.31);
+    font-family: Arial,sans-serif
+    
+}
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; */
+    /* color: black; */
+    /* background-color: whitesmoke; */
+    /* border: 2px solid black; */
+    /* margin: 0;
+    padding: 0;
+    height: 100vh
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+} */
+
+p {
+    font-size: 16px;
+}
+
+/*code for navbar starts from here */
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and company name */
+}
+
+.navbar .logo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and company name */
+}
+
+.navbar .school-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#school-name-container > h3 {
+    /* color: red; */
+    padding: 0px 0px 0px 40px;     
+}
+
+.saffron {
+  color: #FF9933 !important;
+}
+
+.white {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 2px black;
+}
+
+.green {
+  color: #138808 !important;
+}
+
+/* Navigation Links */
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* .navbar nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+} */
+
+.navbar nav ul li a {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar nav ul li a:hover {
+  background-color: #575757;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(5px); /* Adds a slight horizontal movement */
+}
+
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1); /* Underline effect */
+}
+
+#hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+    cursor: pointer;
+}
+#main-section {
+    padding: 20px 0;
+    transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
+}
+
+/*code for mobile device */
+@media (max-width: 767px) {
+    /* Show navbar links when hamburger icon is clicked */
+   
+    .navbar .school-name {
+        font-size: 16px;
+    }
+    .navbar nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+        color: aqua;
+    }    
+    .navbar nav {
+        display: none; /* Initially hide navbar links */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;     
+        z-index: 9;           
+    }
+    .navbar nav ul{
+        flex-direction: column;
+    }
+    .navbar nav ul li{
+        margin: 10px 0;
+    }
+    #hamburger{
+        display: block;
+    }
+    .navbar nav.active{
+        display: block;            
+    }
+    #main-section.shifted {
+        margin-top: 250px; /* Adjust based on navbar height */
+        transition: margin-top 0.3s ease-in-out;
+    }
+    
+}
+
+
+.gallery{
+    min-height: 100vh;
+    background-color: #eee;
+    padding-bottom: 100px;
+}
+
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons{
+    height: 40px;
+    width: 140px;
+    background: #fff;
+    color: #666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.gallery .controls .buttons.active{
+    background: coral;
+    color: #fff;
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+.gallery .image-container .image{
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    margin: 20px;
+}
+
+.gallery .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .image:hover img{
+    transform: scale(1.4);
+}

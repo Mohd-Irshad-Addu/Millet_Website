@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*code for navbar starts from here */
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and company name */
+}
+
+.navbar .logo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and company name */
+}
+
+.navbar .school-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#school-name-container > h3 {
+    /* color: red; */
+    padding: 0px 0px 0px 40px;     
+}
+
+.saffron {
+  color: #FF9933 !important;
+}
+
+.white {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 2px black;
+}
+
+.green {
+  color: #138808 !important;
+}
+
+/* Navigation Links */
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* .navbar nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+} */
+
+.navbar nav ul li a {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar nav ul li a:hover {
+  background-color: #575757;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(5px); /* Adds a slight horizontal movement */
+}
+
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1); /* Underline effect */
+}
+
+#hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+    cursor: pointer;
+}
+
+#main-section {
+    padding: 20px 0;
+    transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
+}
+
+/*code for mobile device */
+@media (max-width: 820px) {
+    /* Show navbar links when hamburger icon is clicked */
+   
+    .navbar .school-name {
+        font-size: 16px;
+    }
+    .navbar nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+        color: aqua;
+    }    
+    .navbar nav {
+        display: none; /* Initially hide navbar links */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;     
+        z-index: 9;           
+    }
+    .navbar nav ul{
+        flex-direction: column;
+    }
+    .navbar nav ul li{
+        margin: 10px 0;
+    }
+    #hamburger{
+        display: block;
+    }
+    .navbar nav.active{
+        display: block;            
+    }
+    #main-section.shifted {
+        margin-top: 250px; /* Adjust based on navbar height */
+        transition: margin-top 0.3s ease-in-out;
+    }
+    
+}
+/* img{
+    width: 15vw;
+    
+} */
+.team-section{
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.team-section .container{
+    width: 80%;
+    margin: auto;
+}
+
+.team-section .container .row{
+    width: 60%;
+    margin: auto;
+}
+
+.team-section .container .row .title{
+    text-align: center;
+    margin: 50px; 
+}
+
+.team-section .container .row .title h1{
+    font-size:35px ;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eb6234;
+}
+
+.team-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #a3a3a3;
+}
+
+.team-section .container .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap : 40px;
+    margin-top: 50px;
+}
+
+.team-section .container .team-card .card{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container .team-card .card:hover{
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+.team-section .container .team-card .card .image-section img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid#fff;
+    object-fit: contain;
+}
+
+.team-section .container .team-card .card .content{
+    width: 100%;
+    text-align: center;
+}
+
+.team-section .container .team-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #639ab8;
+}
+
+.team-section .container .team-card .card .content h4{
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #6e6e6e;
+}
+
+.team-section .container .team-card .card .content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: #6c6c6c;
+}
+
+@media screen and (max-width: 900px){
+    .team-section .container .team-card{
+
+        grid-template-columns: repeat(2 ,1fr);
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+    .team-section .container .team-card{
+
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+@media screen and (max-width: 500px){
+    .team-section .container .row {
+        width: 100%;
+    }
+}

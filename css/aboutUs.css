@@ -1,0 +1,313 @@
+/*basic code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif
+}
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; */
+    /* color: black; */
+    /* background-color: whitesmoke; */
+    /* border: 2px solid black; */
+    /* margin: 0;
+    padding: 0;
+    height: 100vh
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+} */
+
+p {
+    font-size: 16px;
+}
+
+/*code for navbar starts from here */
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and company name */
+}
+
+.navbar .logo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and company name */
+}
+
+.navbar .school-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#school-name-container > h3 {
+    /* color: red; */
+    padding: 0px 0px 0px 40px;     
+}
+
+.saffron {
+  color: #FF9933 !important;
+}
+
+.white {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 2px black;
+}
+
+.green {
+  color: #138808 !important;
+}
+
+/* Navigation Links */
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* .navbar nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+} */
+
+.navbar nav ul li a {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar nav ul li a:hover {
+  background-color: #575757;
+  color: aqua;
+  border-radius: 5px;
+  transform: translateX(5px); /* Adds a slight horizontal movement */
+}
+
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1); /* Underline effect */
+}
+
+#hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+    cursor: pointer;
+}
+
+#main-section {
+    padding: 20px 0;
+    transition: margin-top 0.3s ease-in-out;/* Smooth transition for shifting content*/
+}
+
+/*code for mobile device */
+@media (max-width: 767px) {
+    /* Show navbar links when hamburger icon is clicked */
+   
+    .navbar .school-name {
+        font-size: 16px;
+    }
+    .navbar nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+        color: aqua;
+    }    
+    .navbar nav {
+        display: none; /* Initially hide navbar links */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;     
+        z-index: 9;           
+    }
+    .navbar nav ul{
+        flex-direction: column;
+    }
+    .navbar nav ul li{
+        margin: 10px 0;
+    }
+    #hamburger{
+        display: block;
+    }
+    .navbar nav.active{
+        display: block;            
+    }
+    #main-section.shifted {
+        margin-top: 250px; /* Adjust based on navbar height */
+        transition: margin-top 0.3s ease-in-out;
+    }
+    
+}
+
+/* about us code started from here */
+
+.container{
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.heading{
+    color: #ff6347;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.subContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.content button{
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.content button:hover{
+    background-color: #ff6347;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media  screen and (max-width: 768px) {
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .container{
+        margin: 0px;
+    }
+    .subContainer{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
+    .content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+    .content h2{
+        font-size: 30px;
+    }
+
+    .content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .image{
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
