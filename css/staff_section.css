@@ -270,4 +270,10 @@
     .team-section .container .row {
         width: 100%;
     }
+
+    .team-section .container {
+    width: 100%;
+    margin: auto;
+}
+
 }
