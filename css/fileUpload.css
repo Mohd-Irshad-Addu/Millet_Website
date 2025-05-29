@@ -1,0 +1,104 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdba61;
+    background-image: linear-gradient(45deg, #fdba61 0%, #ff5acd 100%);
+    margin: 0px;
+}
+
+.file-upload-wrapper{
+    position: relative;
+    width: 320px;
+    height: 65px;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+.file-upload-wrapper input[type= "file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.file-upload-wrapper label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.file-upload-wrapper label .fa-upload{
+    margin-right: 12px;
+    font-size: 1.5rem;
+}
+
+.file-upload-wrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 00.2s);
+}
+
+#details-wrapper{
+    background-color: #6a11cb;
+    padding: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+#file-name{
+    font-size: 1.1rem;
+    color: #fff;
+    display: inline-block;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.upload-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+/* for mobile devices */
+@media (max-width: 500px) {
+    .file-upload-wrapper {
+    /* position: relative; */
+    width: 179px;
+    /* height: 65px;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease; */
+}
+}
