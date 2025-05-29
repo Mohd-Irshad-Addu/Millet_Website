@@ -34,7 +34,7 @@ uploadBtn.addEventListener("click", () => {
     const formData = new FormData();
     formData.append("file", files[0]); // Only uploading the first file
 
-    fetch("http://localhost:8080/api/files/upload", {
+    fetch("https://millet-backend-trail.onrender.com/api/files/upload", {
         method: "POST",
         body: formData,
     })
