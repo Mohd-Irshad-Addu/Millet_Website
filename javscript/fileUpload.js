@@ -32,7 +32,12 @@ uploadBtn.addEventListener("click", () => {
     }
 
     const formData = new FormData();
-    formData.append("file", files[0]); // Only uploading the first file
+    // uploading all files
+    for(let i=0; i<files.length; i++){
+     
+        formData.append("images", files[i]);
+        
+    }
 
     fetch("https://millet-backend-trail.onrender.com/api/files/upload", {
         method: "POST",
