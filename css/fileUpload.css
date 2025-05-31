@@ -1,13 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: whitesmoke;
+  /* border: 2px solid black; */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    /* Align items to both ends */
     align-items: center;
-    height: 100vh;
-    background-color: #fdba61;
-    background-image: linear-gradient(45deg, #fdba61 0%, #ff5acd 100%);
-    margin: 0px;
+    /* Vertically center the items */
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    /* Vertically align logo and company name */
+  }
+  
+  .navbar .logo img {
+    width: 40px;
+    /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+    /* Space between logo and company name */
+  }
+  
+  .navbar .school-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #school-name-container>h3 {
+    /* color: red; */
+    padding: 0px 0px 0px 40px;
+  }
+  
+  .saffron {
+    color: #FF9933 !important;
+  }
+  
+  .white {
+    color: #FFFFFF !important;
+    text-shadow: 0 0 2px black;
+  }
+  
+  .green {
+    color: #138808 !important;
+  }
+  
+  /* Navigation Links */
+  .navbar nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar nav ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  /* .navbar nav ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+  } */
+  
+  .navbar nav ul li a {
+    position: relative;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+  }
+  
+  .navbar nav ul li a:hover {
+    background-color: #575757;
+    color: aqua;
+    border-radius: 5px;
+    transform: translateX(5px);
+    /* Adds a slight horizontal movement */
+  }
+  
+  .navbar nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar nav ul li a:hover::after {
+    transform: scaleX(1);
+    /* Underline effect */
+  }
+  
+  #hamburger {
+    display: none;
+  
+    /*
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 999;
+      cursor: pointer;
+       */
+  }
+  
+  /*navbar code ends here */
+  
+  #main-section { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertical center */
+        align-items: center;     /* Horizontal center */
+        height: 100vh;           /* Full viewport height */
+        transition: margin-top 0.3s ease-in-out;
+        gap: 20px;  
+    
+  }
+
+  #image-uploader, #instructions {
+    width: 100%;
+    max-width: 400px; /* Limit size on large screens */
 }
 
 .file-upload-wrapper{
@@ -58,6 +199,7 @@ body{
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    width: 320px;
 }
 
 #file-name{
@@ -89,9 +231,163 @@ body{
     transform: scale(1.05);
 }
 
+/* footer code starts here */
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-nav,
+  .footer-about,
+  .footer-ad {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* To include padding in width */
+  
+  }
+  
+  .footer-nav {
+    margin-left: 5%;
+    /* margin-right: 10%; */
+  }
+  
+  .footer-nav h3,
+  .footer-about h3,
+  .footer-ad h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #575757;
+    color: aqua;
+    border-radius: 5px;
+    transform: translateX(5px);
+    /* Adds a slight horizontal movement */
+    padding: 10px;
+  
+  }
+  
+  .footer-about p,
+  .footer-ad p {
+    font-size: 14px;
+  }
+  
+  .footer-ad .ad-image {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Vertical Lines Between Sections */
+  .footer-nav {
+    border-right: 2px solid #fff;
+    /* White vertical line after this section */
+  }
+  
+  .footer-about {
+    border-right: 2px solid #fff;
+    /* White vertical line after this section */
+  }
+  
+  .footer-about ul {
+    list-style: none;
+    padding-bottom: 20px;
+  }
+  
+  .footer-about ul li a {
+    color: rgb(85, 85, 247);
+  }
+  
+  .footer-about ul li a:hover {
+    font-size: large;
+  }
+  
+  .footer-nav ul li a:hover {
+    background-color: #575757;
+    /* border-radius: 5px; */
+    /* color: aqua; */
+  }
+  
+
 
 /* for mobile devices */
 @media (max-width: 500px) {
+    /* Show navbar links when hamburger icon is clicked */
+
+  .navbar .school-name {
+    font-size: 16px;
+  }
+
+  .navbar nav ul li a:hover {
+    /* background-color: #575757; */
+    border-radius: 5px;
+    color: aqua;
+  }
+
+  .navbar nav {
+    display: none;
+    /* Initially hide navbar links */
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    text-align: center;
+    z-index: 9;
+
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+  }
+
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
+
+  #hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+
+  }
+
+  .navbar nav.active {
+    display: block;
+  }
+    
+    
     .file-upload-wrapper {
     /* position: relative; */
     width: 179px;
@@ -101,4 +397,71 @@ body{
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease; */
 }
+#main-section.shifted {
+    margin-top: 250px;
+    /* Adjust based on navbar height */
+    transition: margin-top 0.3s ease-in-out;
+    
+  }
+
+
+.footer-nav,
+.footer-about,
+.footer-ad {
+  width: 100%;
+  /* Full width on small screens */
+  text-align: center;
+  /* Center content */
+  border-right: none;
+  /* Remove vertical lines on mobile */
+  padding: 20px 0;
+  /* Add some padding for spacing */
+}
+
+.footer-nav h3,
+.footer-about h3,
+.footer-ad h3 {
+  font-size: 16px;
+  /* Slightly smaller font size on mobile */
+}
+
+.footer-nav ul li {
+  margin-bottom: 8px;
+  /* Increase space between list items */
+  list-style: none;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-about ul {
+  padding-bottom: 10px;
+  list-style: none;
+
+}
+
+.footer-ad .ad-image {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+ .footer-container > div {
+  position: relative;
+  padding-bottom: 20px; /* Space between content and the line */
+  margin-bottom: 20px;  /* Space below the line */
+}
+
+.footer-container > div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #ff0066, #ffcc00); /* colorful line */
+  border-radius: 2px;
+}
+
 }

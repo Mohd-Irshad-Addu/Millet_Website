@@ -12,19 +12,117 @@
 </head>
 
 <body>
-    <div class="file-upload-wrapper">
-       <input type="file" id="fileUpload" multiple>
-        <label for="fileUpload">
-            <i class="fa-solid fa-upload"></i> Select File
-        </label>
-    </div>
 
-    <div id="details-wrapper">
-        <div id="file-name">No File Selected</div>
-        <div id="size"></div>
-    </div>
+    
 
-    <button id="uploadBtn" class="upload-btn">Upload File</button>
+    <header class="navbar">
+        <!-- school Logo and Name on the Left -->
+        <div class="logo">
+            <img src="/Images/index/school.png" alt="school Logo">
+        
+            <div id="school-name-container">
+                <span class="school-name">Millet-e-Islamia High School</span>
+                <h3 class="school-scroll">
+                    <span class="saffron">مِلَّتِ</span>
+                    <span class="white">اسلامیہ</span>
+                    <span class="green">ہائی اسکول</span>
+                </h3>
+            </div>
+        </div>
+
+        <div id="hamburger"><img src="/Images/index/menu.png" alt="" width="40px" height="30px"></div>
+
+        <!-- Navigation Links on the Right -->
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/html/aboutUs.html">About</a></li>
+                <li><a href="/html/contactUs.html">Contact Us</a></li>
+                <li><a href="/html/Addmission.html">Admission</a></li>
+                <li><a href="/html/staff_section.html">Staff Section</a></li>
+                <li><a href="/html/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-section">
+        <section id="image-uploader">
+            <div class="file-upload-wrapper">
+                <input type="file" id="fileUpload" multiple>
+                 <label for="fileUpload">
+                     <i class="fa-solid fa-upload"></i> Select File
+                 </label>
+             </div>
+         
+             <div id="details-wrapper">
+                 <div id="file-name">No File Selected</div>
+                 <div id="size"></div>
+             </div>
+         
+             <button id="uploadBtn" class="upload-btn">Upload File</button>           
+
+        </section>
+        <section id="instructions"> 
+            <ul>
+                <li>Image ki size maximum 20 MB hai.</li>
+                <li>Ek sath ap multiple Imgages select karsakte hain.</li>
+                <li>Upload par click karne ke baad 20 seconds wait karen.</li>
+                <li>Jab success message aajaye to samjh lena ke images upload hogyi hain.</li>
+            </ul>
+        </section>
+    </div>
+        
+    <footer>
+        <div class="footer-container">
+            <!-- Navlinks Part -->
+            <div class="footer-nav">
+                <h3><u>Quick Links</u></h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/html/aboutUs.html">About</a></li>
+                    <li><a href="/html/contactUs.html">Contact Us</a></li>
+                    <li><a href="/html/Addmission.html">Admission</a></li>
+                    <li><a href="/html/staff_section.html">Staff Section</a></li>
+                    <li><a href="/html/gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Developed By and Reach Us Part -->
+            <div class="footer-about">
+                <h3><u>Developed By</u></h3>
+                <p><strong>MOHD IRSHAD</strong> (2014 - 2015 BATCH)</p>
+                <ul>
+                    <li><img src="/Images/index/gmail.png" width="12px" height="12px" alt="gmail"> : <a
+                            href="">irshadutkoori@gmail.com</a></li>
+                    <li><img src="/Images/index/whatsapp.png" width="12px" height="12px" alt="gmail"> : <a href="">+91
+                            8520891652</a></li>
+
+                </ul>
+
+
+                <p><strong>SHAIK ABDUL MATEEN</strong> (2018 - 2019 BATCH)</p>
+                <ul>
+                    <li><img src="/Images/index/gmail.png" width="12px" height="12px" alt="gmail"> : <a
+                            href="">shaikabdulmateenmateen@gmail.com</a></li>
+                    <li><img src="/Images/index/whatsapp.png" width="12px" height="12px" alt="gmail"> : <a href="">+91
+                            8790438131</a></li>
+
+                </ul>
+
+
+            </div>
+
+            <!-- Business Ad Part with Image -->
+            <div class="footer-ad">
+                <h3><u>Sponsored By</u></h3>
+                <!-- <a href="https://example.com" target="_blank"> -->
+                <img src="/Images/index/eggs.png" alt="Business Ad" class="ad-image" height="200px" width="1500px">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    
 </body>
 
 
