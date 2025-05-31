@@ -138,6 +138,13 @@ p {
 #main-section{
     padding: 0;
 }
+
+
+
+
+
+
+
 /*code for mobile device */
 @media (max-width: 767px) {
     /* Show navbar links when hamburger icon is clicked */
@@ -238,3 +245,73 @@ p {
 .gallery .image-container .image:hover img{
     transform: scale(1.4);
 }
+
+/* footer ::content :start here  */
+/* .para{ */
+/* border: 2px solid; */
+    /* height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red; */
+
+
+    
+/* } */
+/*  */
+.para{
+    background-color: #fef8e7;
+    border-left: 6px solid #f4c542;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 17px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    animation: fadeIn 1.2s ease-in-out;
+    font-weight: 400;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.upload-button {
+    
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 12px 25px;
+    background-color: #f4c542;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.upload-button > a{
+    text-decoration: none;
+    color: #000;
+}
+
+.upload-button:hover {
+    background-color: #eab308;
+    transform: scale(1.05);
+}
+
+
+
